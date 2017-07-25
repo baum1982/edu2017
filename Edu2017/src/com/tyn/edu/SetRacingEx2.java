@@ -66,13 +66,13 @@ public class SetRacingEx2 {
 		racing.setUp();
 		
 		Runtime rs =  Runtime.getRuntime();
-		rs.gc();
 		
 		long startNano;
 		long endNano;
 		double elapsedTime;
 		
 		
+		rs.gc();
 		startNano = System.nanoTime();
 		racing.iterateHashSet();				
 		endNano = System.nanoTime();
@@ -82,7 +82,7 @@ public class SetRacingEx2 {
 
 		
 		
-//		rs.gc();
+		rs.gc();
 		startNano = System.nanoTime();
 		racing.iterateTreeSet();		
 		endNano = System.nanoTime();
@@ -90,26 +90,15 @@ public class SetRacingEx2 {
 		elapsedTime = (endNano - startNano) / 1000000.0;
 		System.out.println("TreeSetTime :" + elapsedTime);
 
-//		rs.gc();
+		rs.gc();
 		startNano = System.nanoTime();
 		racing.iterateLinkedHashSet();		
 		endNano = System.nanoTime();
 		
 		elapsedTime = (endNano - startNano) / 1000000.0;
 		System.out.println("LinkedHashSetTime :" + elapsedTime);
-
-
 		
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
 	
 	
 }

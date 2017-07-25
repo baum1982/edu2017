@@ -17,29 +17,22 @@ import com.tyn.edu.util.RandomKeyUtil;
 
 // List get
 public class ListRacingEx2 {
-
-	
 	int LOOP_COUNT = 100000;
 	
 	ArrayList<Integer> arrayList;
 	Vector<Integer> vector;
 	LinkedList<Integer> linkedList;
 	
-	
-
 	public void setUp() {
 		arrayList = new ArrayList<>();
 		vector = new Vector<>();
 		linkedList = new LinkedList<>();
 		
-		
 		for (int loop = 0; loop < this.LOOP_COUNT; loop++) {
 			arrayList.add(loop);
 			vector.add(loop);
 			linkedList.add(loop);
-			
 		}
-		
 	}
 	
 	
@@ -68,10 +61,8 @@ public class ListRacingEx2 {
 	public static void main(String[] args) throws InterruptedException {
 		
 		ListRacingEx2 racing = new ListRacingEx2();
-		
 		racing.setUp();
-		
-		
+
 		long startNano;
 		long endNano;
 		double elapsedTime;
@@ -85,8 +76,6 @@ public class ListRacingEx2 {
 		
 		elapsedTime = (endNano - startNano) / 1000000.0;
 		System.out.println("arrayListTime :" + elapsedTime);
-
-		
 		
 		rs.gc();
 		startNano = System.nanoTime();
@@ -103,15 +92,6 @@ public class ListRacingEx2 {
 		
 		elapsedTime = (endNano - startNano) / 1000000.0;
 		System.out.println("LinkedListTime :" + elapsedTime);
-
-
 		
 	}
-	
-	
-	
-	
-	
-	
-	
 }

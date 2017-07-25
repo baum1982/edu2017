@@ -70,10 +70,6 @@ public class MapRacingEx {
 		}
 	}
 	
-	
-	
-	
-	
 	public void getRandomHashMap() {
 		for (int loop = 0; loop < this.LOOP_COUNT; loop++) {
 			hashMap.get(keys[loop]);
@@ -99,24 +95,15 @@ public class MapRacingEx {
 	}
 	
 	
-	
-	
-	
-	
 	public static void main(String[] args) {
-	
-		
 		MapRacingEx racing = new MapRacingEx();
-		
 		racing.setUp();
-		
-		
+
 		long startNano;
 		long endNano;
 		double elapsedTime;
 		
 		Runtime rs =  Runtime.getRuntime();
-		
 		
 		System.out.println("=== [순차 접근] ===");
 		

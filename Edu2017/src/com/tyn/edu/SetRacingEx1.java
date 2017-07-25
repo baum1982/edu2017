@@ -79,15 +79,4 @@ public class SetRacingEx1 {
 
 		
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 }

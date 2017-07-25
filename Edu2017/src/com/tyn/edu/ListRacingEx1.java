@@ -55,8 +55,6 @@ public class ListRacingEx1 {
 		
 		elapsedTime = (endNano - startNano) / 1000000.0;
 		System.out.println("arrayListTime :" + elapsedTime);
-
-		
 		
 		rs.gc();
 		startNano = System.nanoTime();
@@ -73,15 +71,6 @@ public class ListRacingEx1 {
 		
 		elapsedTime = (endNano - startNano) / 1000000.0;
 		System.out.println("LinkedListTime :" + elapsedTime);
-
-
 		
 	}
-	
-	
-	
-	
-	
-	
-	
 }
