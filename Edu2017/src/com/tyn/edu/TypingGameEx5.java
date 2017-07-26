@@ -150,11 +150,25 @@ class TypingGameEx5 extends Frame {
 		delay(time);
 	}
 
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	public static void main(String[] args) {
 		TypingGameEx5 win = new TypingGameEx5();
 		win.start();
 	}
 
+	
+	/**
+	 * 단어를 떨어뜨리는 클래스 
+	 *
+	 */
 	class WordDropper extends Thread {
 		public void run() {
 			outer: while (isPlaying) {
@@ -185,6 +199,11 @@ class TypingGameEx5 extends Frame {
 		} // end of run()
 	}
 
+	
+	/**
+	 * 단어를 생성
+	 *
+	 */
 	class WordGenerator extends Thread {
 		public void run() {
 			while (isPlaying) {
