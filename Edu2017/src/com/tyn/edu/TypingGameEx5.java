@@ -50,6 +50,10 @@ class TypingGameEx5 extends Frame {
 		this("Typing game ver1.0");
 	}
 
+	
+	/*
+	 * Framep 을 그리는 생성자
+	 */
 	TypingGameEx5(String title) {
 		super(title);
 
@@ -238,6 +242,11 @@ class TypingGameEx5 extends Frame {
 		}
 	}
 
+	
+	/**
+	 * 10초동안 랜덤으로 속도, 인터벌을 조작하는 바이러스
+	 *
+	 */
 	class VirusThread extends Thread {
 		public VirusThread(ThreadGroup group, String name) {
 			super(group, name);
@@ -306,6 +315,7 @@ class TypingGameEx5 extends Frame {
 			this(word, 10, isVirus);
 		}
 
+		
 		Word(String word, int step, boolean isVirus) {
 			this.word = word;
 			this.step = step;
